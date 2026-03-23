@@ -89,7 +89,7 @@ const DEFAULT_STATUSES: Status[] = ["Draft", "Scheduled", "Live"]
 
 const STATUS_STYLES: Record<Status, string> = {
   Live:      "bg-emerald-100 text-emerald-700",
-  Scheduled: "bg-blue-100 text-blue-700",
+  Scheduled: "bg-violet-100 text-violet-700",
   Draft:     "bg-zinc-100 text-zinc-600",
   Archived:  "bg-zinc-100 text-zinc-400",
 }
