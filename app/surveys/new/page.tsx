@@ -728,7 +728,7 @@ function PreviewTab({ surveyName, questions }: {
 
 // ─── Main page ────────────────────────────────────────────────────────────────
 
-export default function NewSurveyPage() {
+function NewSurveyPageInner() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const templateParam = searchParams.get("template")
@@ -857,5 +857,13 @@ export default function NewSurveyPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function NewSurveyPage() {
+  return (
+    <React.Suspense>
+      <NewSurveyPageInner />
+    </React.Suspense>
   )
 }
