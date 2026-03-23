@@ -52,7 +52,7 @@ const CARD_CLASS = "rounded-xl border bg-card shadow-sm"
 
 const navItems: { id: NavId; label: string; complete: boolean }[] = [
   { id: "details", label: "Details", complete: true },
-  { id: "target", label: "Target audience", complete: true },
+  { id: "target", label: "Target", complete: true },
   { id: "view", label: "View surveys", complete: false },
 ]
 
